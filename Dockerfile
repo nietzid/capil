@@ -24,4 +24,4 @@ COPY --from=build-stage /app/dist /pb/pb_public
 
 EXPOSE 8090
 
-CMD ["sh", "-c", "./pocketbase serve --http 0.0.0.0:8090"]
+CMD ["sh", "-c", "./pocketbase serve --http 0.0.0.0:80"]
