@@ -22,6 +22,6 @@ VOLUME /pb/pb_data
 
 COPY --from=build-stage /app/dist /pb/pb_public
 
-EXPOSE 80
+EXPOSE 8090
 
-CMD ["sh", "-c", "./pocketbase serve --http 0.0.0.0:80"]
+CMD ["sh", "-c", "./pocketbase serve --http 0.0.0.0:8090"]
